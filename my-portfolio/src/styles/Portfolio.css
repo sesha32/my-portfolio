@@ -1,3 +1,4 @@
+/* Overall body styling */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -51,20 +52,58 @@ body {
   color: #DC5F00; /* Orange for the name */
 }
 
-.left-section h2 {
-  font-size: 36px;
-  margin-top: 20px;
-  color: #FF7733; /* Lighter orange for headings */
+.left-section h3 {
+  font-size: 25px;
+  color: #FF7733; /* Adjust color for emphasis */
+  margin-bottom: 20px;
 }
 
 .left-section p {
   font-size: 20px;
-  margin: 10px 0;
   color: #FFFFFF; /* White for general text */
+  line-height: 1.6; /* Increase line spacing for readability */
 }
 
-.left-section p strong {
-  color: #DC5F00; /* Orange for strong text */
+/* Educational Information Styling */
+.education-info {
+  margin-top: 20px;
+}
+
+.education-item {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* 3 columns: Course, Institution, Date */
+  gap: 20px; /* Add gaps between columns */
+  align-items: start; /* Align items to the top */
+  padding: 20px 0; /* Add vertical space between each education item */
+  border-bottom: 1px solid #444; /* Add a subtle divider between items */
+}
+
+.education-item p {
+  font-size: 18px;
+  color: #FFFFFF; /* White for general text */
+  margin: 0;
+}
+
+.education-item .course {
+  color: #DC5F00; /* Orange for course name */
+  font-weight: bold;
+}
+
+.education-item .institution {
+  color: #FFFFFF;
+}
+
+.education-item .date {
+  color: #FF7733; /* Light orange for dates */
+  text-align: right;
+}
+
+/* Profile image styling */
+.right-section {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 50px; /* Adjust this value to move the image down */
 }
 
 .right-section img {
