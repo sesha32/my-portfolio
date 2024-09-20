@@ -127,3 +127,67 @@ body {
   font-size: 20px;
   color: #FFFFFF; /* White for section text */
 }
+
+/* Contact Section Styling */
+.contact-section {
+  background-color: #333333; /* Dark greyish black */
+  padding: 50px;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  color: #FF7733; /* Lighter orange for section headings */
+  margin-bottom: 30px;
+}
+
+/* Contact Form Styling */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #444; /* Slightly lighter grey for the form background */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-size: 18px;
+  color: #FF7733; /* Light orange for label text */
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  background-color: #222; /* Darker grey for input fields */
+  color: #fff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #DC5F00; /* Orange outline on focus */
+}
+
+button[type="submit"] {
+  background-color: #DC5F00; /* Orange button */
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #FF7733; /* Lighter orange on hover */
+}
