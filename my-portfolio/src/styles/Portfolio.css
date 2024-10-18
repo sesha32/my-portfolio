@@ -191,3 +191,28 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #FF7733; /* Lighter orange on hover */
 }
+.projects-section {
+  padding: 50px;
+  background-color: #1C1C1C; /* Dark background for projects section */
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsive grid */
+  gap: 20px;
+}
+
+.project-box {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.3s;
+}
+
+.project-box:hover {
+  transform: scale(1.05); /* Enlarge box on hover */
+  background-color: #DC5F00; /* Change background color on hover */
+}

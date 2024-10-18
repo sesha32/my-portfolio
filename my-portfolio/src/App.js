@@ -1,12 +1,22 @@
 import React from 'react';
-import Portfolio from './components/Portfolio.js'; // Import Portfolio component
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Portfolio from './components/Portfolio';
+import Project1 from './components/Project1';
+import Project2 from './components/Project2';
+import Project3 from './components/Project3';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Portfolio /> {/* Render the Portfolio component */}
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Portfolio />} />
+        <Route path="/project1" element={<Project1 />} />  {/* Fixed Path */}
+        <Route path="/project2" element={<Project2 />} />  {/* Fixed Path */}
+        <Route path="/project3" element={<Project3 />} />  {/* Fixed Path */}
+        {/* Add routes for other projects */}
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom'; // Using Link from react-router-dom
 import '../styles/Portfolio.css'; // Import the CSS for styling
 
 const Portfolio = () => {
@@ -7,11 +8,11 @@ const Portfolio = () => {
       {/* Navbar */}
       <nav className="navbar">
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#work">Work Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="#home">Home</Link></li>  {/* Use Link for smooth navigation */}
+          <li><Link to="#projects">Projects</Link></li>
+          <li><Link to="#work">Work Experience</Link></li>
+          <li><Link to="#skills">Skills</Link></li>
+          <li><Link to="#contact">Contact</Link></li>
         </ul>
       </nav>
 
@@ -44,14 +45,24 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="right-section">
-          <img src={require('../assets/profile.jpg')} alt="Your Photo" />
+          <img src={require('../assets/profile.jpg')} alt="Your Photo" />  {/* Ensure the image is properly imported */}
         </div>
       </section>
 
-      {/* Other Sections */}
-      <section id="projects" className="section">
+      {/* Projects Section */}
+      <section id="projects" className="section projects-section">
         <h2>Projects</h2>
-        {/* Add project details */}
+        <div className="projects-grid">
+          <Link to="/project1" className="project-box">
+            <h3>Project 1</h3>
+          </Link>
+          <Link to="/project2" className="project-box">
+            <h3>Project 2</h3>
+          </Link>
+          <Link to="/project3" className="project-box">
+            <h3>Project 3</h3>
+          </Link>
+        </div>
       </section>
 
       <section id="work" className="section">
