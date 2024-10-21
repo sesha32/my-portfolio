@@ -65,15 +65,30 @@ const Portfolio = () => {
         </div>
       </section>
 
+      {/* Work Experience Section */}
       <section id="work" className="section">
         <h2>Work Experience</h2>
         {/* Add work experience details */}
       </section>
 
-      <section id="skills" className="section">
+      {/* Skills Section */}
+      <section id="skills" className="section skills-section">
         <h2>Skills</h2>
-        {/* Add skills details */}
-      </section>
+        <div className="skills-grid">
+          <div className="skill-card">C Programming</div>
+          <div className="skill-card">Java</div>
+          <div className="skill-card">Python</div>
+          <div className="skill-card">Android Development</div>
+          <div className="skill-card">Web Development</div>
+          <div className="skill-card">React</div>
+          <div className="skill-card">Linux</div>
+          <div className="skill-card">Networking</div>
+          <div className="skill-card">Git</div>
+          <div className="skill-card">Communication</div>
+          </div>
+          </section>
+
+
 
       {/* Contact Section */}
       <section id="contact" className="section contact-section">
