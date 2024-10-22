@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Using Link from react-router-dom
 import '../styles/Portfolio.css'; // Import the CSS for styling
 
 const Portfolio = () => {
@@ -8,11 +7,11 @@ const Portfolio = () => {
       {/* Navbar */}
       <nav className="navbar">
         <ul>
-          <li><Link to="#home">Home</Link></li>  {/* Use Link for smooth navigation */}
-          <li><Link to="#projects">Projects</Link></li>
-          <li><Link to="#work">Work Experience</Link></li>
-          <li><Link to="#skills">Skills</Link></li>
-          <li><Link to="#contact">Contact</Link></li>
+          <li><a href="#home">Home</a></li>  {/* Use href for in-page navigation */}
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#work">Work Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
@@ -21,7 +20,7 @@ const Portfolio = () => {
         <div className="left-section">
           <h1>Sesha Satya Sai Puvvala</h1>
           <h3>Career Objective:</h3>
-          <p>Proficient in application development, encompassing both front-end and back-end technologies. Interested in Back-end. Skilled in database management and maintaining databases for optimal performance. Enthusiastic about cybersecurity and networking, continuously seeking opportunities to expand knowledge and contribute to secure digital environments.</p>
+          <p>Proficient in application development, encompassing both front-end and back-end technologies...</p>
 
           <h3>Educational Information:</h3>
           <div className="education-info">
@@ -53,15 +52,15 @@ const Portfolio = () => {
       <section id="projects" className="section projects-section">
         <h2>Projects</h2>
         <div className="projects-grid">
-          <Link to="/project1" className="project-box">
+          <a href="/project1" className="project-box">
             <h3>Project 1</h3>
-          </Link>
-          <Link to="/project2" className="project-box">
+          </a>
+          <a href="/project2" className="project-box">
             <h3>Project 2</h3>
-          </Link>
-          <Link to="/project3" className="project-box">
+          </a>
+          <a href="/project3" className="project-box">
             <h3>Project 3</h3>
-          </Link>
+          </a>
         </div>
       </section>
 
@@ -85,10 +84,8 @@ const Portfolio = () => {
           <div className="skill-card">Networking</div>
           <div className="skill-card">Git</div>
           <div className="skill-card">Communication</div>
-          </div>
-          </section>
-
-
+        </div>
+      </section>
 
       {/* Contact Section */}
       <section id="contact" className="section contact-section">
