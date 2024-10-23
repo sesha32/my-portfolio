@@ -1,4 +1,8 @@
 /* Overall body styling */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: Arial, sans-serif;
@@ -252,4 +256,56 @@ button[type="submit"]:hover {
 .skill-card:active {
   transform: translateY(0); /* Reset transform on click */
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Reset shadow */
+}
+/* Work Experience Section */
+.work-section {
+  padding: 50px;
+  background-color: #1C1C1C; /* Matching dark background */
+  text-align: center;
+}
+
+.work-section h2 {
+  font-size: 36px;
+  color: #FF7733; /* Lighter orange for section headings */
+  margin-bottom: 30px;
+}
+
+.work-experience {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.work-item {
+  background-color: #333; /* Dark grey background for each item */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Adding subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.work-item h3 {
+  color: #DC5F00; /* Orange for job title */
+  font-size: 24px;
+}
+
+.work-item p {
+  color: #FFFFFF; /* White text for location and dates */
+  margin-bottom: 10px;
+}
+
+.work-item ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.work-item ul li {
+  color: #FFFFFF; /* White text for bullet points */
+  font-size: 18px;
+}
+
+.work-item:hover {
+  transform: scale(1.05); /* Enlarge box on hover */
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow effect */
+  background-color: #DC5F00; /* Orange background on hover */
 }

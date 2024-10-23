@@ -7,7 +7,7 @@ const Portfolio = () => {
       {/* Navbar */}
       <nav className="navbar">
         <ul>
-          <li><a href="#home">Home</a></li>  {/* Use href for in-page navigation */}
+          <li><a href="#home">Home</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#work">Work Experience</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -44,7 +44,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="right-section">
-          <img src={require('../assets/profile.jpg')} alt="Your Photo" />  {/* Ensure the image is properly imported */}
+          <img src={require('../assets/profile.jpg')} alt="Your Photo" />
         </div>
       </section>
 
@@ -65,9 +65,27 @@ const Portfolio = () => {
       </section>
 
       {/* Work Experience Section */}
-      <section id="work" className="section">
+      <section id="work" className="section work-section">
         <h2>Work Experience</h2>
-        {/* Add work experience details */}
+        <div className="work-experience">
+          <div className="work-item">
+            <h3>Lineysha & Thevan Software Technologies | Full Stack Developer Intern</h3>
+            <p>Vijayawada, India | May 2024 - July 2024</p>
+            <ul>
+              <li>Collaborated with a team to develop and implement solutions for the coaching depot of South Central Railways.</li>
+              <li>Led the team in designing and deploying a real-time monitoring system.</li>
+              <li>Coordinated tasks and facilitated communication among team members to ensure project milestones were met on time.</li>
+            </ul>
+          </div>
+          <div className="work-item">
+            <h3>IBM | Cyber Security Intern</h3>
+            <p>May 2023 - July 2023</p>
+            <ul>
+              <li>Gained expertise in cybersecurity fundamentals, including network security, threat analysis, and risk management.</li>
+              <li>Learned to use cybersecurity tools and technologies, such as firewalls, intrusion detection systems (IDS), and encryption protocols.</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       {/* Skills Section */}
