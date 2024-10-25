@@ -7,12 +7,12 @@ import Project3 from './components/Project3';
 
 const App = () => {
   return (
-    <Router>
+    <Router basename="/my-portfolio">  {/* Added basename for GitHub Pages */}
       <Routes>
         <Route path="/" element={<Portfolio />} />
-        <Route path="/project1" element={<Project1 />} />  {/* Fixed Path */}
-        <Route path="/project2" element={<Project2 />} />  {/* Fixed Path */}
-        <Route path="/project3" element={<Project3 />} />  {/* Fixed Path */}
+        <Route path="/project1" element={<Project1 />} />
+        <Route path="/project2" element={<Project2 />} />
+        <Route path="/project3" element={<Project3 />} />
         {/* Add routes for other projects */}
       </Routes>
     </Router>

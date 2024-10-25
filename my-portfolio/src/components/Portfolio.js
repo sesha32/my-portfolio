@@ -44,7 +44,7 @@ const Portfolio = () => {
           </div>
         </div>
         <div className="right-section">
-          <img src={require('../assets/profile.jpg')} alt="Your Photo" />
+          <img src={require('../assets/profile.jpg')} alt="Profile of Sesha Satya Sai Puvvala" />
         </div>
       </section>
 
