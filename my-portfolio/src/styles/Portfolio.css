@@ -309,3 +309,23 @@ button[type="submit"]:hover {
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.4); /* Enhanced shadow effect */
   background-color: #DC5F00; /* Orange background on hover */
 }
+.social-media {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.social-media a {
+  color: #DC5F00; /* Matches your color palette */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.social-media a:hover {
+  text-decoration: underline;
+}

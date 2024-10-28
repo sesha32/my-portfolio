@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedin, faGithub, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import '../styles/Portfolio.css'; // Import the CSS for styling
 
 const Portfolio = () => {
@@ -29,13 +31,11 @@ const Portfolio = () => {
               <p className="institution">Jawaharlal Nehru Technological University-Gurajada, Vizianagaram</p>
               <p className="date">2022-2025</p>
             </div>
-
             <div className="education-item">
               <p className="course"><strong>Diploma in Computer Engineering</strong></p>
               <p className="institution">Andhra Polytechnic College</p>
               <p className="date">2019-2022</p>
             </div>
-
             <div className="education-item">
               <p className="course"><strong>Xth</strong></p>
               <p className="institution">Sri Chaitanya School</p>
@@ -123,6 +123,22 @@ const Portfolio = () => {
           </div>
           <button type="submit">Send Message</button>
         </form>
+        
+        {/* Social Media Links with Icons */}
+        <div className="social-media">
+          <a href="https://linkedin.com/in/sesha32" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+          </a>
+          <a href="https://github.com/sesha32" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faGithub} /> GitHub
+          </a>
+          <a href="https://instagram.com/your-instagram" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faInstagram} /> Instagram
+          </a>
+          <a href="https://x.com/your-handle" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faTwitter} /> X
+          </a>
+        </div>
       </section>
     </div>
   );
