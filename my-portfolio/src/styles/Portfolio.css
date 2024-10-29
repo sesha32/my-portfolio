@@ -68,39 +68,68 @@ body {
   line-height: 1.6; /* Increase line spacing for readability */
 }
 
-/* Educational Information Styling */
+/* Education Section Styling */
+.education-section {
+  background-color: #333333; /* Dark greyish black for the section */
+  padding: 60px; /* Increased padding */
+  text-align: center;
+}
+
+.education-section h2 {
+  font-size: 36px;
+  color: #FF7733; /* Lighter orange for section heading */
+  margin-bottom: 30px;
+}
+
 .education-info {
-  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items in column layout */
 }
 
 .education-item {
-  display: grid;
-  grid-template-columns: 1fr 2fr 1fr; /* 3 columns: Course, Institution, Date */
-  gap: 20px; /* Add gaps between columns */
-  align-items: start; /* Align items to the top */
-  padding: 20px 0; /* Add vertical space between each education item */
-  border-bottom: 1px solid #444; /* Add a subtle divider between items */
+  background-color: #444; /* Slightly lighter background for items */
+  color: #FFFFFF; /* White for text */
+  padding: 25px; /* Increased padding for individual items */
+  margin: 15px; /* Increased margin */
+  border-radius: 8px; /* Rounded corners */
+  width: 100%; /* Full width for mobile */
+  max-width: 600px; /* Increased max width for larger screens */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.education-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
 }
 
 .education-item p {
-  font-size: 18px;
-  color: #FFFFFF; /* White for general text */
-  margin: 0;
+  margin: 5px 0; /* Add some spacing */
+  font-size: 18px; /* Uniform font size */
 }
 
 .education-item .course {
   color: #DC5F00; /* Orange for course name */
-  font-weight: bold;
+  font-weight: bold; /* Bold font for emphasis */
 }
 
 .education-item .institution {
-  color: #FFFFFF;
+  color: #FFFFFF; /* White for institution name */
 }
 
 .education-item .date {
-  color: #FF7733; /* Light orange for dates */
-  text-align: right;
+  color: #FF7733; /* Light orange for date */
+  text-align: right; /* Right align dates */
 }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .education-item {
+    width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
 
 /* Profile image styling */
 .right-section {

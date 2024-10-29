@@ -47,26 +47,27 @@ const Portfolio = () => {
       </section>
 
       {/* Education Section */}
-      <section id="education" className="section education-section">
-        <h2>Education</h2>
-        <div className="education-info">
-          <div className="education-item">
-            <p className="course"><strong>B.Tech in Computer Science & Engineering</strong></p>
-            <p className="institution">Jawaharlal Nehru Technological University-Gurajada, Vizianagaram</p>
-            <p className="date">2022-2025</p>
-          </div>
-          <div className="education-item">
-            <p className="course"><strong>Diploma in Computer Engineering</strong></p>
-            <p className="institution">Andhra Polytechnic College</p>
-            <p className="date">2019-2022</p>
-          </div>
-          <div className="education-item">
-            <p className="course"><strong>Xth</strong></p>
-            <p className="institution">Sri Chaitanya School</p>
-            <p className="date">2019</p>
-          </div>
-        </div>
-      </section>
+<section id="education" className="section education-section">
+  <h2>Education</h2>
+  <div className="education-info">
+    <div className="education-item">
+      <p className="course"><strong>B.Tech in Computer Science & Engineering</strong></p>
+      <p className="institution">Jawaharlal Nehru Technological University-Gurajada, Vizianagaram</p>
+      <p className="date">2022-2025</p>
+    </div>
+    <div className="education-item">
+      <p className="course"><strong>Diploma in Computer Engineering</strong></p>
+      <p className="institution">Andhra Polytechnic College</p>
+      <p className="date">2019-2022</p>
+    </div>
+    <div className="education-item">
+      <p className="course"><strong>Xth</strong></p>
+      <p className="institution">Sri Chaitanya School</p>
+      <p className="date">2019</p>
+    </div>
+  </div>
+</section>
+
 
       {/* Projects Section */}
       <section id="projects" className="section projects-section">
