@@ -33,7 +33,7 @@ const Portfolio = () => {
             <a href="https://github.com/sesha32" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faGithub} /> GitHub
             </a>
-            <a href="https://instagram.com/your-instagram" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/sesha_satya_sai_032/" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram} /> Instagram
             </a>
             <a href="https://x.com/your-handle" target="_blank" rel="noopener noreferrer">
