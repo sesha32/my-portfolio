@@ -10,6 +10,7 @@ const Portfolio = () => {
       <nav className="navbar">
         <ul>
           <li><a href="#home">Home</a></li>
+          <li><a href="#education">Education</a></li>
           <li><a href="#projects">Projects</a></li>
           <li><a href="#work">Work Experience</a></li>
           <li><a href="#skills">Skills</a></li>
@@ -22,29 +23,48 @@ const Portfolio = () => {
         <div className="left-section">
           <h1>Sesha Satya Sai Puvvala</h1>
           <h3>Career Objective:</h3>
-          <p>Proficient in application development, encompassing both front-end and back-end technologies...</p>
-
-          <h3>Educational Information:</h3>
-          <div className="education-info">
-            <div className="education-item">
-              <p className="course"><strong>B.Tech in Computer Science & Engineering</strong></p>
-              <p className="institution">Jawaharlal Nehru Technological University-Gurajada, Vizianagaram</p>
-              <p className="date">2022-2025</p>
-            </div>
-            <div className="education-item">
-              <p className="course"><strong>Diploma in Computer Engineering</strong></p>
-              <p className="institution">Andhra Polytechnic College</p>
-              <p className="date">2019-2022</p>
-            </div>
-            <div className="education-item">
-              <p className="course"><strong>Xth</strong></p>
-              <p className="institution">Sri Chaitanya School</p>
-              <p className="date">2019</p>
-            </div>
+          <p>As a software engineer with expertise in app development, web development, database management, and full-stack development, I aim to leverage my technical skills to drive innovation and build impactful solutions. With a strong interest in business, I am committed to integrating technology and strategic thinking to develop scalable solutions that contribute to organizational growth and deliver enhanced user experiences. My goal is to work in a role that challenges me technically while allowing me to expand my understanding of business operations and value creation.</p>
+          
+          {/* Social Media Links */}
+          <div className="social-media">
+            <a href="https://www.linkedin.com/in/sesha-satya-sai-puvvala-7b4766211" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
+            </a>
+            <a href="https://github.com/sesha32" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faGithub} /> GitHub
+            </a>
+            <a href="https://instagram.com/your-instagram" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faInstagram} /> Instagram
+            </a>
+            <a href="https://x.com/your-handle" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faTwitter} /> X
+            </a>
           </div>
         </div>
         <div className="right-section">
           <img src={require('../assets/profile.jpg')} alt="Profile of Sesha Satya Sai Puvvala" />
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section id="education" className="section education-section">
+        <h2>Education</h2>
+        <div className="education-info">
+          <div className="education-item">
+            <p className="course"><strong>B.Tech in Computer Science & Engineering</strong></p>
+            <p className="institution">Jawaharlal Nehru Technological University-Gurajada, Vizianagaram</p>
+            <p className="date">2022-2025</p>
+          </div>
+          <div className="education-item">
+            <p className="course"><strong>Diploma in Computer Engineering</strong></p>
+            <p className="institution">Andhra Polytechnic College</p>
+            <p className="date">2019-2022</p>
+          </div>
+          <div className="education-item">
+            <p className="course"><strong>Xth</strong></p>
+            <p className="institution">Sri Chaitanya School</p>
+            <p className="date">2019</p>
+          </div>
         </div>
       </section>
 
@@ -123,22 +143,6 @@ const Portfolio = () => {
           </div>
           <button type="submit">Send Message</button>
         </form>
-        
-        {/* Social Media Links with Icons */}
-        <div className="social-media">
-          <a href="https://linkedin.com/in/sesha32" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-          </a>
-          <a href="https://github.com/sesha32" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faGithub} /> GitHub
-          </a>
-          <a href="https://instagram.com/your-instagram" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faInstagram} /> Instagram
-          </a>
-          <a href="https://x.com/your-handle" target="_blank" rel="noopener noreferrer">
-            <FontAwesomeIcon icon={faTwitter} /> X
-          </a>
-        </div>
       </section>
     </div>
   );
