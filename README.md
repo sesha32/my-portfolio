@@ -32,8 +32,11 @@ This website is optimized for mobile viewing, with responsive layouts and adjust
 This project is deployed using GitHub Pages for easy accessibility.
 
 ## 🛠️ Technologies Used
-- HTML, CSS, and JavaScript for front-end structure and styling.
+- React, HTML, CSS, and JavaScript for front-end structure and styling.
 - GitHub Pages for deployment.
+
+## 📬 Contact
+Feel free to reach out via [LinkedIn](https://www.linkedin.com/in/sesha-satya-sai-puvvala-7b4766211) or check my work on [GitHub](https://github.com/sesha32).
 
 ## 📜 License
 This project is open-source.
