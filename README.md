@@ -36,4 +36,4 @@ This project is deployed using GitHub Pages for easy accessibility.
 - GitHub Pages for deployment.
 
 ## 📜 License
-This project is open-source and available under the MIT License.
+This project is open-source.
