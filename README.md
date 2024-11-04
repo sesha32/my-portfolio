@@ -14,8 +14,9 @@ Check out my portfolio here: [My Portfolio on GitHub Pages](https://sesha32.gith
 - **Contact Form**: A form for visitors to reach out, located in the Contact section.
 
 ## 📂 Project Structure
-- **Navbar**: A fixed navbar for easy navigation, with links to Home, Projects, Work Experience, Skills, and Contact.
-- **Home Section**: Includes my photo, name, career objective, and education details.
+- **Navbar**: A fixed navbar for easy navigation, with links to Home, Education, Projects, Work Experience, Skills, and Contact.
+- **Home Section**: Includes my photo, name,and career objective.
+- **Education Section**: Includes my education details.
 - **Projects Section**: Showcases my notable projects in a responsive grid layout.
 - **Skills Section**: Displays my skills as individual skill cards.
 - **Work Experience Section**: Lists my work experience with key roles and responsibilities.
