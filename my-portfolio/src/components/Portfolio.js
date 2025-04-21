@@ -70,41 +70,50 @@ const Portfolio = () => {
 
 
 {/* Projects Section */}
-<section id="projects" className="section projects-section py-20 bg-gray-50">
-  <h2 className="text-3xl font-bold mb-8 text-center text-orange-500">Projects</h2>
-  <div className="projects-grid grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
-
-{/* Project 1 Card */}
-<a href="https://github.com/yourusername/project1" target="_blank" rel="noopener noreferrer" className="project-box bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-  <img src={require('../assets/auraassist.png')} alt="Project 1" className="w-full h-56 object-cover"/>
-  <div className="p-6">
-    <h3 className="text-xl font-semibold text-gray-800 mb-2">Project 1</h3>
-    <p className="text-gray-600">Brief description of Project 1 goes here. You can highlight key features or technologies used.</p>
-  </div>
-</a>
-
-
-
-    {/* Project 2 Card */}
-    <a href="https://github.com/yourusername/project2" target="_blank" rel="noopener noreferrer" className="project-box bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-      <img src="path/to/project2-image.jpg" alt="Project 2" className="w-full h-56 object-cover"/>
-      <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">Project 2</h3>
-        <p className="text-gray-600">Brief description of Project 2 goes here. Mention what the project is about, its goals, and technologies used.</p>
+<section id="projects" className="section projects-section">
+  <h2 className="section-title">Projects</h2>
+  <div className="project-cards">
+    {/* Project 1 */}
+    <a
+      href="https://github.com/sesha32/keylogger"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project-card"
+    >
+      <img src={require('../assets/keylogger.png')} alt="keylogger" className="project-image" />
+      <div className="project-content">
+        <h3 className="project-title">Keylogger</h3>
       </div>
     </a>
 
-    {/* Project 3 Card */}
-    <a href="https://github.com/yourusername/project3" target="_blank" rel="noopener noreferrer" className="project-box bg-white shadow-lg rounded-lg overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-xl">
-      <img src="path/to/project3-image.jpg" alt="Project 3" className="w-full h-56 object-cover"/>
-      <div className="p-6">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">Project 3</h3>
-        <p className="text-gray-600">Brief description of Project 3 goes here. You can explain the unique features and tools/technologies used.</p>
+    {/* Project 2 */}
+    <a
+      href="https://github.com/sesha32/StreamSmart"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project-card"
+    >
+      <img src={require('../assets/streamsmart.png')} alt="StreamSmart" className="project-image" />
+      <div className="project-content">
+        <h3 className="project-title">StreamSmart</h3>
       </div>
     </a>
 
+    {/* Project 3 */}
+    <a
+      href="https://github.com/sesha32/Railway_Depoh"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="project-card"
+    >
+      <img src={require('../assets/railwayproject.png')} alt="Railway Project" className="project-image" />
+      <div className="project-content">
+        <h3 className="project-title">Railway Project</h3>
+      </div>
+    </a>
   </div>
 </section>
+
 
 
 
