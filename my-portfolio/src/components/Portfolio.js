@@ -1,25 +1,48 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 import '../styles/Portfolio.css'; // Import the CSS for styling
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 
 const Portfolio = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }, []);
+
   return (
-    <div>
+    <>
       {/* Navbar */}
       <nav className="navbar">
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#work">Work Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
+  <div className="navbar-container">
+    <div className="hamburger" onClick={toggleMenu}>
+      <FontAwesomeIcon icon={faBars} />
+    </div>
+    <ul className={`navbar-links ${menuOpen ? 'active' : ''}`}>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#work">Work Experience</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
       {/* Home Section */}
-      <section id="home" className="home-section">
+      <section id="home" className="home-section" data-aos="fade-right">
         <div className="left-section">
           <h1>Sesha Satya Sai Puvvala</h1>
           <h3>Career Objective:</h3>
@@ -47,7 +70,7 @@ const Portfolio = () => {
       </section>
 
       {/* Education Section */}
-<section id="education" className="section education-section">
+<section id="education" className="section education-section" data-aos="fade-right">
   <h2>Education</h2>
   <div className="education-info">
     <div className="education-item">
@@ -70,7 +93,7 @@ const Portfolio = () => {
 
 
 {/* Projects Section */}
-<section id="projects" className="section projects-section">
+<section id="projects" className="section projects-section" data-aos="fade-right">
   <h2 className="section-title">Projects</h2>
   <div className="project-cards">
     {/* Project 1 */}
@@ -120,7 +143,7 @@ const Portfolio = () => {
 
 
       {/* Work Experience Section */}
-      <section id="work" className="section work-section">
+      <section id="work" className="section work-section" data-aos="fade-right">
         <h2>Work Experience</h2>
         <div className="work-experience">
           <div className="work-item">
@@ -144,7 +167,7 @@ const Portfolio = () => {
       </section>
 
       {/* Skills Section */}
-      <section id="skills" className="section skills-section">
+      <section id="skills" className="section skills-section" data-aos="fade-right">
         <h2>Skills</h2>
         <div className="skills-grid">
           <div className="skill-card">C Programming</div>
@@ -161,7 +184,7 @@ const Portfolio = () => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="section contact-section">
+      <section id="contact" className="section contact-section" data-aos="fade-right">
         <h2>Contact Me</h2>
         <form className="contact-form">
           <div className="form-group">
@@ -179,7 +202,7 @@ const Portfolio = () => {
           <button type="submit">Send Message</button>
         </form>
       </section>
-    </div>
+      </>
   );
 };
 
