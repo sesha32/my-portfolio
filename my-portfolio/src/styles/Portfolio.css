@@ -250,8 +250,11 @@ a { color: inherit; }
 .book-overline { margin: 33px 0 14px; color: #d38ba0; font: 500 9px var(--mono); letter-spacing: .14em; }
 .book-copy h2 { margin: 0; color: #fff; font: 600 clamp(38px, 5vw, 65px)/1.08 var(--display); letter-spacing: -.065em; }
 .book-copy h2 em { color: #df9aaf; font: italic 400 .92em var(--serif); letter-spacing: -.05em; }
-.book-tagline { margin: 25px 0 13px; color: #f3e8ec; font: italic 19px/1.55 var(--serif); }
+.book-genres { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 19px; }
+.book-genres span { padding: 7px 9px; border: 1px solid rgba(218,139,160,.28); color: #e5c8d1; font: 8px var(--mono); }
+.book-tagline { max-width: 440px; margin: 23px 0 13px; color: #f3e8ec; font: italic 19px/1.55 var(--serif); }
 .book-description { max-width: 470px; margin: 0; color: #cbbdc3; font-size: 12px; line-height: 1.85; }
+.book-hook { margin: 20px 0 0; padding-left: 13px; border-left: 2px solid #a82a4d; color: #e2a0b3; font: italic 15px var(--serif); }
 .book-retailers { display: flex; flex-wrap: wrap; gap: 9px; margin-top: 28px; }
 .book-retailers a { display: inline-flex; align-items: center; gap: 15px; padding: 12px 15px; color: #fff; background: #4a1b2b; border: 1px solid rgba(224,157,177,.3); font-size: 10px; font-weight: 700; text-decoration: none; transition: background .2s, transform .2s; }
 .book-retailers a:hover { background: #8a2040; transform: translateY(-2px); }
