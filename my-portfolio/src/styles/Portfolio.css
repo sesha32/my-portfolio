@@ -82,7 +82,7 @@ a { color: inherit; }
 .project-card:last-child:nth-child(odd) .project-art { height: 100%; min-height: 250px; }
 .project-card:nth-child(1) .project-art img { object-position: center 38%; }
 .project-card:nth-child(4) .project-art img { object-position: center 38%; filter: saturate(.65) hue-rotate(18deg); }
-.project-number { position: absolute; top: 15px; left: 17px; background: var(--paper); padding: 8px 10px; font: 10px var(--mono); }
+.project-number { position: absolute; top: 16px; left: 18px; color: #fff; background: transparent; padding: 0; font: 500 11px var(--mono); text-shadow: 0 1px 7px rgba(0,0,0,.8); }
 .project-open { position: absolute; bottom: 14px; right: 14px; width: 38px; height: 38px; background: var(--green); display: grid; place-items: center; text-decoration: none; font-size: 18px; }
 .project-info { padding: 22px 23px 24px; }
 .project-type { color: #d38ba0; font-size: 8px; text-transform: uppercase; }
