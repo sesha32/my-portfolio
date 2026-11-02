@@ -54,7 +54,7 @@ export default function Portfolio() {
         <a className="brand" href="#home" onClick={closeMenu} aria-label="Sesha Puvvala, home"><span className="brand-mark">SP</span><span>Sesha Puvvala<span className="brand-dot">.</span></span></a>
         <button className="menu-toggle" type="button" aria-expanded={menuOpen} aria-label="Toggle navigation" onClick={() => setMenuOpen(!menuOpen)}>{menuOpen ? 'Close' : 'Menu'} <span>{menuOpen ? '−' : '+'}</span></button>
         <nav className={menuOpen ? 'site-nav is-open' : 'site-nav'} aria-label="Main navigation">
-          {[['About', '#about'], ['Work', '#projects'], ['Interests', '#interests'], ['Experience', '#experience'], ['Contact', '#contact']].map(([label, href]) => <a key={href} href={href} onClick={closeMenu}>{label}</a>)}
+          {[['About', '#about'], ['Work', '#projects'], ['Book', '#book'], ['Interests', '#interests'], ['Contact', '#contact']].map(([label, href]) => <a key={href} href={href} onClick={closeMenu}>{label}</a>)}
         </nav>
         <a className="header-cta" href="mailto:seshasatyasai2003@gmail.com">Let’s talk <Arrow /></a>
       </header>
@@ -84,8 +84,13 @@ export default function Portfolio() {
           <div className="stat-strip"><div><strong>100<span>+</span></strong><small>LeetCode problems solved</small></div><div><strong>5<span>★</span></strong><small>HackerRank C programming</small></div><div><strong>346</strong><small>GATE 2026 CSE/IT score</small></div><div><strong>2025</strong><small>Computer Science graduate</small></div></div>
         </section>
 
+        <section className="book-section section-wrap" id="book">
+          <div className="book-art"><img src={require('../assets/book-cover.png')} alt="Front cover of Something Followed Us Back by Sesha" /><span className="book-edition">A PSYCHOLOGICAL THRILLER</span></div>
+          <div className="book-copy"><div className="section-kicker"><span>02</span> MY BOOK</div><p className="book-overline">WRITTEN & PUBLISHED BY SESHA</p><h2>Something<br /><em>Followed Us Back</em></h2><p className="book-tagline">“It didn’t come to destroy us.<br />It came to become us.”</p><p className="book-description">My published psychological thriller, set against the secrets and shadows of Nallamala Research Station. Explore the book and choose a store below.</p><div className="book-retailers"><a href="https://www.amazon.in/dp/9359176990" target="_blank" rel="noreferrer">Amazon <Arrow /></a><a href="https://www.flipkart.com/something-followed-back/p/itm28d462055bb7a?pid=9789359176994" target="_blank" rel="noreferrer">Flipkart <Arrow /></a><a href="https://store.pothi.com/book/sesha-satya-sai-puvvala-something-followed-us-back/" target="_blank" rel="noreferrer">Pothi Store <Arrow /></a></div></div>
+        </section>
+
         <section className="projects-section section-wrap" id="projects">
-          <div className="section-heading"><div><div className="section-kicker"><span>02</span> PROJECTS</div><h2>Things I’ve <em>made.</em></h2></div><p>From full-scale applications and AI projects to smaller experiments and learning builds.</p></div>
+          <div className="section-heading"><div><div className="section-kicker"><span>03</span> PROJECTS</div><h2>Things I’ve <em>made.</em></h2></div><p>From full-scale applications and AI projects to smaller experiments and learning builds.</p></div>
           <div className="project-grid">{projects.map((project) => <article className="project-card" key={project.number}>
             <div className={`project-art project-art-${project.number}`}>{project.image ? <img src={project.image} alt="" /> : <div className="project-illustration" aria-hidden="true"><span>{project.monogram}</span><i /><b /></div>}<span className="project-number">{project.number}</span>{project.href && <a className="project-open" href={project.href} target="_blank" rel="noreferrer" aria-label={`Open ${project.title} on GitHub`}><Arrow /></a>}</div>
             <div className="project-info"><p className="project-type">{project.type}</p><h3>{project.title}</h3><p className="project-description">{project.description}</p><div className="tag-row">{project.stack.map((item) => <span key={item}>{item}</span>)}</div></div>
@@ -94,7 +99,7 @@ export default function Portfolio() {
         </section>
 
         <section className="experience-section section-wrap" id="experience">
-          <div className="section-heading"><div><div className="section-kicker"><span>03</span> EXPERIENCE & EDUCATION</div><h2>Learning through <em>doing.</em></h2></div><p>Professional experience, technical foundations, and continued growth.</p></div>
+          <div className="section-heading"><div><div className="section-kicker"><span>04</span> EXPERIENCE & EDUCATION</div><h2>Learning through <em>doing.</em></h2></div><p>Professional experience, technical foundations, and continued growth.</p></div>
           <div className="experience-grid"><div className="timeline"><h3 className="subsection-label">EXPERIENCE</h3>
             <article className="timeline-item"><span className="timeline-date">MAY — JUL 2024</span><div><h4>Full-Stack Developer Intern</h4><p className="timeline-place">Lineysha & Thevan Software Technologies · Vijayawada</p><ul><li>Collaborated on coaching depot solutions for South Central Railways.</li><li>Led design and deployment of a real-time monitoring system.</li><li>Coordinated team tasks and communication to meet project milestones.</li></ul></div></article>
             <article className="timeline-item"><span className="timeline-date">MAY — JUL 2023</span><div><h4>Cybersecurity Intern</h4><p className="timeline-place">IBM</p><ul><li>Studied network security, threat analysis, and risk management.</li><li>Built familiarity with firewalls, intrusion detection systems, and encryption concepts.</li></ul></div></article>
@@ -106,12 +111,12 @@ export default function Portfolio() {
         </section>
 
         <section className="skills-section section-wrap" id="skills">
-          <div className="section-heading"><div><div className="section-kicker"><span>04</span> TOOLKIT</div><h2>What I bring <em>to the table.</em></h2></div><p>Practical experience in Python, SQL, Git/GitHub, Flask, backend development, and Linux. More tools from my coursework and projects are below.</p></div>
+          <div className="section-heading"><div><div className="section-kicker"><span>05</span> TOOLKIT</div><h2>What I bring <em>to the table.</em></h2></div><p>Practical experience in Python, SQL, Git/GitHub, Flask, backend development, and Linux. More tools from my coursework and projects are below.</p></div>
           <div className="skills-grid">{skills.map(([label, ...items]) => <div className="skill-group" key={label}><h3>{label}</h3><div className="skill-pills">{items.map((item) => <span key={item}>{item}</span>)}</div></div>)}</div>
         </section>
 
         <section className="interests-section section-wrap" id="interests">
-          <div className="section-heading"><div><div className="section-kicker"><span>05</span> WHAT I’M INTO</div><h2>Curiosity, in <em>many directions.</em></h2></div><p>The subjects and creative work that keep me exploring beyond the next line of code.</p></div>
+          <div className="section-heading"><div><div className="section-kicker"><span>06</span> WHAT I’M INTO</div><h2>Curiosity, in <em>many directions.</em></h2></div><p>The subjects and creative work that keep me exploring beyond the next line of code.</p></div>
           <div className="interest-grid">
             <article><span>01 / BUILD</span><h3>Useful digital products</h3><p>Full-stack applications, thoughtful interfaces, and software that solves real problems.</p></article>
             <article><span>02 / EXPLORE</span><h3>AI & intelligent systems</h3><p>AI-powered experiences, computer vision, and new ways people can interact with software.</p></article>
@@ -121,11 +126,11 @@ export default function Portfolio() {
         </section>
 
         <section className="credentials-section section-wrap">
-          <div className="credentials-grid"><div><div className="section-kicker"><span>06</span> CERTIFICATIONS</div><h2>Foundations for <em>what’s next.</em></h2></div><ul className="credential-list"><li>CCNA v7: Switching, Routing, and Wireless Essentials <span>CISCO</span></li><li>CCNA v7: Enterprise Networking, Security, and Automation <span>CISCO</span></li><li>Cybersecurity Essentials <span>CISCO</span></li><li>Career Essentials in Software Development <span>LINKEDIN LEARNING</span></li><li>Python, Java & SQL skill certificates <span>HACKERRANK</span></li></ul></div>
+          <div className="credentials-grid"><div><div className="section-kicker"><span>07</span> CERTIFICATIONS</div><h2>Foundations for <em>what’s next.</em></h2></div><ul className="credential-list"><li>CCNA v7: Switching, Routing, and Wireless Essentials <span>CISCO</span></li><li>CCNA v7: Enterprise Networking, Security, and Automation <span>CISCO</span></li><li>Cybersecurity Essentials <span>CISCO</span></li><li>Career Essentials in Software Development <span>LINKEDIN LEARNING</span></li><li>Python, Java & SQL skill certificates <span>HACKERRANK</span></li></ul></div>
           <div className="honors-row"><div><span>COMMUNITY</span><p>Student Placement Coordinator, JNTU-GV · Technical Coordinator, CreSencE 2K24</p></div><div><span>OUTSIDE CODE</span><p>Published author of the psychological thriller <em>Something Followed Us Back</em>.</p></div></div>
         </section>
 
-        <section className="contact-section" id="contact"><div className="contact-inner"><div className="section-kicker"><span>07</span> SAY HELLO</div><h2>Have an idea? <em>Let’s talk.</em></h2><p>For project conversations, collaborations, or just to connect, I’d be happy to hear from you.</p><a className="button button-light" href="mailto:seshasatyasai2003@gmail.com">Email Sesha <Arrow /></a><div className="contact-details"><a href="mailto:seshasatyasai2003@gmail.com">seshasatyasai2003@gmail.com</a><a href="tel:+917989690618">+91 79896 90618</a></div></div></section>
+        <section className="contact-section" id="contact"><div className="contact-inner"><div className="section-kicker"><span>08</span> SAY HELLO</div><h2>Have an idea? <em>Let’s talk.</em></h2><p>For project conversations, collaborations, or just to connect, I’d be happy to hear from you.</p><a className="button button-light" href="mailto:seshasatyasai2003@gmail.com">Email Sesha <Arrow /></a><div className="contact-details"><a href="mailto:seshasatyasai2003@gmail.com">seshasatyasai2003@gmail.com</a><a href="tel:+917989690618">+91 79896 90618</a></div></div></section>
       </main>
       <footer className="site-footer"><a className="brand" href="#home"><span className="brand-mark">SP</span><span>Sesha Puvvala<span className="brand-dot">.</span></span></a><p>Designed with care · © {new Date().getFullYear()} Sesha Satya Sai Puvvala</p><a href="#home">Back to top ↑</a></footer>
     </div>
