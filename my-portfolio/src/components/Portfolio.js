@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import '../styles/Portfolio.css';
 
 const links = [
@@ -47,6 +47,29 @@ function Arrow() { return <span aria-hidden="true">↗</span>; }
 export default function Portfolio() {
   const [menuOpen, setMenuOpen] = useState(false);
   const closeMenu = () => setMenuOpen(false);
+  useEffect(() => {
+    const targets = document.querySelectorAll(
+      '.hero-copy, .hero-visual, .intro-section > .section-kicker, .intro-grid > *, .stat-strip > div, .section-heading, .book-art, .book-copy, .project-card, .more-projects-heading, .more-project, .timeline > .subsection-label, .timeline-item, .education-panel > .subsection-label, .education-entry, .skill-group, .interest-grid article, .credentials-grid > *, .honors-row > div, .contact-inner > *, .site-footer > *'
+    );
+    if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      targets.forEach((target) => target.classList.add('is-visible'));
+      return undefined;
+    }
+    const observer = new IntersectionObserver((entries, activeObserver) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          activeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -36px 0px' });
+    targets.forEach((target, index) => {
+      target.classList.add('reveal-on-scroll');
+      target.style.setProperty('--reveal-delay', `${(index % 4) * 75}ms`);
+      observer.observe(target);
+    });
+    return () => observer.disconnect();
+  }, []);
   return (
     <div className="portfolio-shell">
       <a className="skip-link" href="#main">Skip to content</a>

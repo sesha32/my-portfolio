@@ -257,6 +257,9 @@ a { color: inherit; }
 .book-retailers a:hover { background: #8a2040; transform: translateY(-2px); }
 .book-retailers a span { color: #e2a0b3; }
 @media (max-width: 650px) { .book-section { grid-template-columns: 1fr; gap: 48px; } .book-art { width: min(76%, 285px); } .book-edition { left: -11px; } .book-copy h2 { font-size: 44px; } .book-retailers { display: grid; grid-template-columns: 1fr; } .book-retailers a { justify-content: space-between; } }
+.reveal-on-scroll { opacity: 0; transform: translateY(22px); transition: opacity 680ms cubic-bezier(.2,.65,.25,1), transform 680ms cubic-bezier(.2,.65,.25,1); transition-delay: var(--reveal-delay, 0ms); will-change: opacity, transform; }
+.reveal-on-scroll.is-visible { opacity: 1; transform: translateY(0); }
+@media (prefers-reduced-motion: reduce) { .reveal-on-scroll, .reveal-on-scroll.is-visible { opacity: 1; transform: none; transition: none; will-change: auto; } }
 .hero h1 span { color: #d98aa1; }
 .hero .text-link { color: #fff; border-color: rgba(255,255,255,.45); }
 .hero .scroll-cue { color: #c8b8be; }
