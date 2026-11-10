@@ -103,7 +103,7 @@ export default function Portfolio() {
 
         <section className="intro-section section-wrap" id="about">
           <div className="section-kicker"><span>01</span> A LITTLE ABOUT ME</div>
-          <div className="intro-grid"><h2>Good engineering starts with <em>curiosity.</em></h2><div className="intro-copy"><p>I’m a software developer with hands-on experience building backend and web applications, collaborating on railway operations software, and exploring cybersecurity fundamentals through an IBM internship.</p><p>I like moving between the details of implementation and the bigger question of how a product can make someone’s work easier. My projects span AI-assisted learning, recruitment, subscription management, railway monitoring, and cybersecurity.</p><div className="link-row">{links.map(([label, href]) => <a key={label} href={href} target="_blank" rel="noreferrer">{label} <Arrow /></a>)}</div></div></div>
+          <div className="intro-grid"><h2>Good engineering starts with <em>curiosity.</em></h2><div className="intro-copy"><p>I’m a software developer with hands-on experience building backend and web applications, collaborating on railway operations software, and exploring cybersecurity fundamentals through an IBM internship.</p><p>I value discipline and consistency, and I’m fascinated by finance, business, and entrepreneurship: how ideas become useful products and sustainable ventures. My projects span AI-assisted learning, recruitment, subscription management, railway monitoring, and cybersecurity.</p><div className="link-row">{links.map(([label, href]) => <a key={label} href={href} target="_blank" rel="noreferrer">{label} <Arrow /></a>)}</div></div></div>
           <div className="stat-strip"><div><strong>100<span>+</span></strong><small>LeetCode problems solved</small></div><div><strong>5<span>★</span></strong><small>HackerRank C programming</small></div><div><strong>346</strong><small>GATE 2026 CSE/IT score</small></div><div><strong>2025</strong><small>Computer Science graduate</small></div></div>
         </section>
 
@@ -139,12 +139,12 @@ export default function Portfolio() {
         </section>
 
         <section className="interests-section section-wrap" id="interests">
-          <div className="section-heading"><div><div className="section-kicker"><span>06</span> WHAT I’M INTO</div><h2>Curiosity, in <em>many directions.</em></h2></div><p>The subjects and creative work that keep me exploring beyond the next line of code.</p></div>
+          <div className="section-heading"><div><div className="section-kicker"><span>06</span> WHAT KEEPS ME CURIOUS</div><h2>How I think, <em>build, and create.</em></h2></div><p>Steady progress, ideas that grow into businesses, technology that helps people, and stories that stay with them.</p></div>
           <div className="interest-grid">
-            <article><span>01 / BUILD</span><h3>Useful digital products</h3><p>Full-stack applications, thoughtful interfaces, and software that solves real problems.</p></article>
-            <article><span>02 / EXPLORE</span><h3>AI & intelligent systems</h3><p>AI-powered experiences, computer vision, and new ways people can interact with software.</p></article>
-            <article><span>03 / UNDERSTAND</span><h3>Cybersecurity</h3><p>How systems can be protected, how threats work, and how people can use technology with confidence.</p></article>
-            <article><span>04 / CREATE</span><h3>Stories & storytelling</h3><p>I’m also a published author, drawn to psychological thrillers and the craft of building suspense.</p></article>
+            <article><span>01 / PRACTICE</span><h3>Discipline & consistency</h3><p>I value showing up, staying curious, and making steady progress through focused effort over time.</p></article>
+            <article><span>02 / UNDERSTAND</span><h3>Finance & entrepreneurship</h3><p>I enjoy learning how businesses work, how financial decisions shape them, and how an idea can grow into a sustainable venture.</p></article>
+            <article><span>03 / BUILD</span><h3>Technology & people</h3><p>From AI and voice-based tools to cybersecurity, I’m curious about how technology changes the way people work and trust systems.</p></article>
+            <article><span>04 / CREATE</span><h3>Psychological storytelling</h3><p>I’m a published author drawn to stories about fear, identity, and uncertainty—and the details that keep a reader thinking.</p></article>
           </div>
         </section>
 
